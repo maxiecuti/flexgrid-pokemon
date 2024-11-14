@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+*{
+    zoom:1;
+}
+body{
+    color: rgb(255, 130, 224);
+    display: grid;
+    grid-template-columns: minmax(min-content, 25vw) 1fr;
+    grid-template-rows: minmax(min-content, 15vh) 1fr;
+    grid-template-areas: 'sidebar header' 'sidebar content';
+}
+img{
+    width: 50%;
+    height: 100%;
+    border-radius: 0%;
+}
+.header{
+    background-color: rgb(0, 0, 0);
+    color: rgb(240, 0, 120);
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1rem;
+}
+.sidebar{
+    background-color: rgb(134, 1, 63);
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+    overflow: auto;
+}
+.item{
+    flex: 1;
+    background: rgb(220, 0, 121);
+    padding: 1rem;
+    margin: 0.5rem;
+    height: max-content;
+}
+.item:hover{
+    color: rgb(175, 0, 85);
+    background-color: rgb(198, 0, 115);
+}
+.content{
+    background-color: rgb(255, 130, 195);
+    color: rgb(174, 7, 96);
+    grid-area: content;
+    padding-left: 6rem;
+    padding-right: 4rem;
+    padding-top: 2rem;
+}
+a{
+    color: rgb(91, 3, 37);
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+}
+a:visited{
+    color: rgb(172, 2, 76);
+}
